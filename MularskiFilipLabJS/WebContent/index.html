@@ -146,10 +146,11 @@
 				<script async type="text/javascript">
 					document.write('<p>Ćw. 1. Witaj, ' + name + '</p>');
 
-					alert(seasons[0]);
+					document.write('<h2> Zadanie 1 </h1>');
+					//alert(seasons[0]);
 
 					seasons[seasons.length - 1] = 'winter is coming';
-					alert(seasons[seasons.length - 1]);
+					//alert(seasons[seasons.length - 1]);
 
 					seasons[seasons.length] = 'new season';
 					seasons.push('endless summer', 'autumn');
@@ -161,6 +162,17 @@
 
 					document.write('Prime numbers after pop: ' + prime_numbers + '<br/>');
 					document.write('Removed one: ' + removed_prime + '<br/>');
+
+					document.write('<h2> Zadanie 2 </h2>');
+					document.write('<p>Pierwszy element to <strong>');
+					document.write(letters[0] + '</strong></p>');
+
+					document.write('<p>Ostatni element to <strong>');
+					document.write(letters[letters.length - 1] + '</strong></p>');
+
+					letters.unshift('g');
+					document.write('<p>[Po unshift] Pierwszy element to <strong>');
+					document.write(letters[0] + '</strong></p>');
 
 				</script>
 			</div>
