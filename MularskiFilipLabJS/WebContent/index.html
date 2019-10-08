@@ -88,7 +88,7 @@
 						<p>nazwisko:</p>
 					</div>
 					<div class="col-md-4">
-						<p>Mularski</p>
+						<p id="nazwisko"></p>
 					</div>
 				</div>
 				<div class="row">
@@ -96,7 +96,7 @@
 						<p>imię:</p>
 					</div>
 					<div class="col-md-4">
-						<p>Filip</p>
+						<p id="imie"></p>
 					</div>
 				</div>
 				<div class="row">
@@ -104,7 +104,7 @@
 						<p>grupa:</p>
 					</div>
 					<div class="col-md-4">
-						<p>1</p>
+						<p id="grupa"></p>
 					</div>
 				</div>
 				<div class="row">
@@ -112,7 +112,7 @@
 						<p>email:</p>
 					</div>
 					<div class="col-md-4">
-						<p>18731@student.pwsz.elblag.pl</p>
+						<p id="email"></p>
 					</div>
 				</div>
 				<div class="row">
@@ -120,15 +120,15 @@
 						<p>nr indeksu:</p>
 					</div>
 					<div class="col-md-4">
-						<p>18731</p>
+						<p id="indeks"></p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-2" align="left">
-						<p>Repo:</p>
+						<p>repo:</p>
 					</div>
 					<div class="col-md-4">
-						<a href="http://github.com/FMularski/JWPWAI" target="_blank">github.com/FMularski/JWPWAI</a>
+						<a id="repo" href="http://github.com/FMularski/JWPWAI" target="_blank"></a>
 					</div>
 				</div>
 
@@ -142,6 +142,8 @@
 		<div class="container">
 			<div class="jumbotron">
 				<h1>Projekt 1</h1> <!-- deklaracje zmiennych w pliku lab1.js -->
+				<p id="nowy1"></p>
+				<p id="nowy2"></p>
 
 				<script async type="text/javascript">
 					document.write('<p>Ćw. 1. Witaj, ' + name + '</p>');
@@ -157,13 +159,13 @@
 
 					var primes_count = prime_numbers.push(17, 19, 23);
 					document.write('Prime numbers before pop: ' + prime_numbers + '<br/>');
-					document.write('How many of them before pop: ' + primes_count + '<br/><hr/>');
+					document.write('How many of them before pop: ' + primes_count + '<br/>');
 					var removed_prime = prime_numbers.pop();
 
 					document.write('Prime numbers after pop: ' + prime_numbers + '<br/>');
 					document.write('Removed one: ' + removed_prime + '<br/>');
 
-					document.write('<h2> Zadanie 2 </h2>');
+					document.write('<hr/><h2> Zadanie 2 </h2>');
 					document.write('<p>Pierwszy element to <strong>');
 					document.write(letters[0] + '</strong></p>');
 
@@ -173,6 +175,39 @@
 					letters.unshift('g');
 					document.write('<p>[Po unshift] Pierwszy element to <strong>');
 					document.write(letters[0] + '</strong></p>');
+
+					document.write('<hr/><h2> Zadanie 3 </h2>');
+					var formsCounter = document.forms.length;
+					document.write('formsCounter = ' + formsCounter);
+
+					document.write('<hr/><h2> Zadanie 4 </h2>');
+					document.write('Dane dodane za pomoca DOM');
+					document.getElementById("nazwisko").innerHTML = "Mularski";
+					document.getElementById("imie").innerHTML = "Filip";
+					document.getElementById("grupa").innerHTML = "1";
+					document.getElementById("indeks").innerHTML = "18731";
+					document.getElementById("email").innerHTML = "18731@student.pwsz.elblag.pl";
+					document.getElementById("repo").innerHTML = "github.com/FMularski/JWPWAI";
+
+					document.write('<p id="nowy1"></p>');
+					document.write('<p id="nowy2"></p>');
+
+					document.getElementById("nowy1").innerHTML = seasons[0];
+					document.getElementById("nowy2").innerHTML = letters[2];
+
+					var i = 0;
+					document.write('<b>Petla while:</b><br/>');
+					while( i < letters.length / 2)
+					{
+						document.write((i + 1) + ') ' + letters[i] + '<br/>');
+						i++;
+					}
+					document.write('<b>Petla for:</b><br/>');
+					for ( i = 0; i < letters.length / 2; i++)
+						document.write((i + 1) + ') ' + letters[i] + '<br/>');
+
+					document.write('<button onclick="myData()">O mnie</button>');
+
 
 				</script>
 			</div>
