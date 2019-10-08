@@ -128,7 +128,7 @@
 						<p>Repo:</p>
 					</div>
 					<div class="col-md-4">
-						<a href="http://github.com/FMularski/JWPWAI">github.com/FMularski/JWPWAI</a>
+						<a href="http://github.com/FMularski/JWPWAI" target="_blank">github.com/FMularski/JWPWAI</a>
 					</div>
 				</div>
 
@@ -141,10 +141,27 @@
 	<section id="projekt1">
 		<div class="container">
 			<div class="jumbotron">
-				<h1>Projekt 1</h1>
+				<h1>Projekt 1</h1> <!-- deklaracje zmiennych w pliku lab1.js -->
 
 				<script async type="text/javascript">
 					document.write('<p>Ćw. 1. Witaj, ' + name + '</p>');
+
+					alert(seasons[0]);
+
+					seasons[seasons.length - 1] = 'winter is coming';
+					alert(seasons[seasons.length - 1]);
+
+					seasons[seasons.length] = 'new season';
+					seasons.push('endless summer', 'autumn');
+
+					var primes_count = prime_numbers.push(17, 19, 23);
+					document.write('Prime numbers before pop: ' + prime_numbers + '<br/>');
+					document.write('How many of them before pop: ' + primes_count + '<br/><hr/>');
+					var removed_prime = prime_numbers.pop();
+
+					document.write('Prime numbers after pop: ' + prime_numbers + '<br/>');
+					document.write('Removed one: ' + removed_prime + '<br/>');
+
 				</script>
 			</div>
 		</div>
