@@ -40,3 +40,53 @@
   margin: 20px 0 10px 10px;
 
 }
+
+.btn1changed
+{
+    color: red;
+}
+
+.btn2changed
+{
+    font-size: 24px;
+}
+
+.btn3changed
+{
+    text-decoration: underline;
+}
+
+.btn4changed
+{
+    text-align: center;
+}
+
+.btn5changed
+{
+    text-transform: capitalize;
+}
+
+.btn6changed
+{
+    font-weight: bolder;
+}
+
+.btn7changed
+{
+    border: 3px dotted blue;
+}
+
+.btn8changed
+{
+    font-style: italic;
+}
+
+.btn9changed
+{
+    font-family: fantasy;
+}
+
+.btn10changed
+{
+    text-shadow: 2px 2px green;
+}
