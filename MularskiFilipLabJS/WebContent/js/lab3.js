@@ -20,5 +20,11 @@ $(document).ready(function() {
     $('.main').append(message);
   });
 
+  // zad 2.3
+
+  $("#btn").click(function(){
+    $(this).val("zostałem kliknięty!");
+  });
+
 
 }); // koniec funkcji ready
