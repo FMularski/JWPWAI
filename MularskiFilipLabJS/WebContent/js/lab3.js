@@ -5,4 +5,11 @@ $(document).ready(function() {
     quote.addClass('pullquote');
     $(this).before(quote);
   }); // koniec funkcji each
+
+  $("*").dblclick(function (){
+    let msg = "Kliknieto " + $(this);
+    alert(msg);
+  });
+
+
 }); // koniec funkcji ready
