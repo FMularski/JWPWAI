@@ -39,8 +39,6 @@ $(document).ready(function() {
 
   function btnChange(nr)
   {
-    console.log(nr);
-
     switch (nr)
     {
       case "1":
